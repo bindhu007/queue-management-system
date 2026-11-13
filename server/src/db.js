@@ -2,7 +2,8 @@ const { DatabaseSync } = require('node:sqlite');
 const path = require('path');
 const bcrypt = require('bcryptjs');
 
-const dbPath = path.join(__dirname, '../queue.db');
+const isServerless = !!(process.env.VERCEL || process.env.AWS_LAMBDA_FUNCTION_NAME || process.env.VERCEL_ENV);
+const dbPath = isServerless ? path.join('/tmp', 'queue.db') : path.join(__dirname, '../queue.db');
 const db = new DatabaseSync(dbPath);
 
 // Enable WAL mode and foreign key constraints for performance & integrity

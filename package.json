@@ -8,7 +8,16 @@
     "dev": "bash ./start.sh",
     "server": "node server/src/server.js",
     "client": "cd client && node_modules/.bin/vite --host 0.0.0.0 --port 5173",
-    "test": "node server/tests/api.test.js"
+    "test": "node server/tests/api.test.js",
+    "build": "cd client && npm install && npm run build"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "socket.io": "^4.8.1"
   },
   "keywords": [
     "queue-management",
@@ -17,7 +26,8 @@
     "analytics",
     "react",
     "express",
-    "sqlite"
+    "sqlite",
+    "vercel"
   ],
   "author": "Queue Management Engineering",
   "license": "MIT"

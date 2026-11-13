@@ -120,6 +120,20 @@ export function QueueProvider({ children }) {
     };
   }, [selectedQueueId, fetchQueues, fetchQueueDetail, fetchAnalytics]);
 
+  // Fallback Polling if running on serverless environments (e.g. Vercel)
+  useEffect(() => {
+    if (socketConnected) return;
+
+    const pollInterval = setInterval(() => {
+      fetchQueues();
+      if (selectedQueueId) {
+        fetchQueueDetail(selectedQueueId);
+      }
+    }, 4000);
+
+    return () => clearInterval(pollInterval);
+  }, [socketConnected, selectedQueueId, fetchQueues, fetchQueueDetail]);
+
   // Create Queue (Req 1 & 2)
   const createQueue = async (queueData) => {
     try {
