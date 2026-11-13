@@ -1,0 +1,24 @@
+{
+  "name": "queue-management-system",
+  "version": "1.0.0",
+  "description": "Full-Stack Queue Management System with Real-Time Analytics and Token Reordering",
+  "private": true,
+  "scripts": {
+    "start": "bash ./start.sh",
+    "dev": "bash ./start.sh",
+    "server": "node server/src/server.js",
+    "client": "cd client && node_modules/.bin/vite --host 0.0.0.0 --port 5173",
+    "test": "node server/tests/api.test.js"
+  },
+  "keywords": [
+    "queue-management",
+    "token-system",
+    "realtime",
+    "analytics",
+    "react",
+    "express",
+    "sqlite"
+  ],
+  "author": "Queue Management Engineering",
+  "license": "MIT"
+}
