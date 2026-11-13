@@ -1,5 +1,7 @@
 # ⚡ Q-Flow: Full-Stack Real-Time Queue & Token Management System
 
+[![Live Demo on Vercel](https://img.shields.io/badge/Live_Demo-Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://queue-management-system-five-psi.vercel.app/)
+
 [![Node.js](https://img.shields.io/badge/Node.js-v24.x-339933?logo=node.js)](https://nodejs.org)
 [![React](https://img.shields.io/badge/React-18.x-61DAFB?logo=react)](https://react.dev)
 [![Vite](https://img.shields.io/badge/Vite-6.x-646CFF?logo=vite)](https://vitejs.dev)
