@@ -7,6 +7,7 @@
 [![SQLite](https://img.shields.io/badge/SQLite-ACID_Engine-003B57?logo=sqlite)](https://www.sqlite.org)
 [![Socket.io](https://img.shields.io/badge/Socket.io-Realtime-010101?logo=socket.io)](https://socket.io)
 [![Test Suite](https://img.shields.io/badge/Tests-31%20Passed%20(100%25)-10b981)](server/tests/api.test.js)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/bindhu007/queue-management-system)
 
 **Q-Flow** is an enterprise-grade, full-stack queue management platform engineered for hospitals, financial institutions, service centers, and government offices. It provides queue managers with instant 1-click token summons, bidirectional queue reordering, automated voice synthesizers, real-time public kiosks, and interactive analytics dashboards.
 
